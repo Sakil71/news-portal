@@ -47,13 +47,18 @@
         <!-- Difference between Var, Let, Const -->
         <section>
             <h3 class="text-center">No: 1</h3>
-            <h4>Difference between Var, Let, Const</h4>
-            <p>A lot of shiny new features came out with ES2015 (ES6). And now, since it's 2020, it's assumed that a lot
-                of JavaScript developers have become familiar with and have started using these features.</p>
-            <p>One of the features that came with ES6 is the addition of let and const, which can be used for variable
-                declaration. The question is, what makes them different from good ol' var which we've been using? If you
-                are still not clear about this, then this article is for you.</p>
-            <div class="bg-primary p-5">
+            <div class="bg-danger p-5 mb-4 rounded">
+                <h4>Difference between Var, Let, Const</h4>
+                <p>A lot of shiny new features came out with ES2015 (ES6). And now, since it's 2020, it's assumed that a
+                    lot
+                    of JavaScript developers have become familiar with and have started using these features.</p>
+                <p>One of the features that came with ES6 is the addition of let and const, which can be used for
+                    variable
+                    declaration. The question is, what makes them different from good ol' var which we've been using? If
+                    you
+                    are still not clear about this, then this article is for you.</p>
+            </div>
+            <div class="bg-info p-5 mb-4 rounded">
                 <h4>Var:</h4>
                 <p>Before the advent of ES6, var declarations ruled. There are issues associated with variables declared
                     with var, though. That is why it was necessary for new ways to declare variables to emerge. First,
@@ -66,18 +71,24 @@
                     function. This means that it is available and can be accessed only within that function.</p>
             </div>
 
-            <h4>Let:</h4>
-            <p>let is now preferred for variable declaration. It's no surprise as it comes as an improvement to var
-                declarations. It also solves the problem with var that we just covered. Let's consider why this is so.
-            </p>
-            <h4>Let is blocked scope</h4>
-            <p>A block is a chunk of code bounded by {}. A block lives in curly braces. Anything within curly braces is
-                a block.So a variable declared in a block with let is only available for use within that block. </p>
-            <h4>let can be updated but not re-declared.</h4>
-            <p>Just like var, a variable declared with let can be updated within its scope. Unlike var, a let variable
-                cannot be re-declared within its scope.</p>
+            <div class="bg-info p-5 mb-4 rounded">
+                <h4>Let:</h4>
+                <p>let is now preferred for variable declaration. It's no surprise as it comes as an improvement to var
+                    declarations. It also solves the problem with var that we just covered. Let's consider why this is
+                    so.
+                </p>
+                <h4>Let is blocked scope</h4>
+                <p>A block is a chunk of code bounded by {}. A block lives in curly braces. Anything within curly braces
+                    is
+                    a block.So a variable declared in a block with let is only available for use within that block. </p>
+                <h4>let can be updated but not re-declared.</h4>
+                <p>Just like var, a variable declared with let can be updated within its scope. Unlike var, a let
+                    variable
+                    cannot be re-declared within its scope.</p>
+            </div>
 
-            <h4>Const:</h4>
+            <div class="bg-info p-5 mb-4 rounded">
+                <h4>Const:</h4>
             <p>Variables declared with the const maintain constant values. const declarations share some similarities
                 with let declarations.</p>
             <h4>const declarations are block scoped</h4>
@@ -85,12 +96,14 @@
             <h4>const cannot be updated or re-declared</h4>
             <p>This means that the value of a variable declared with const remains the same within its scope. It cannot
                 be updated or re-declared.</p>
+            </div>
         </section>
 
         <!-- Difference between Arrow function and Regular function -->
         <section>
-            <h3>No 2:</h3>
-            <h4>The Difference Between Regular Functions and Arrow Functions</h4>
+            <h3 class="text-center">No 2:</h3>
+            <div class="bg-secondary p-5 my-4 rounded">
+                <h4>The Difference Between Regular Functions and Arrow Functions</h4>
             <h4>Arrow Function</h4>
             <p>Arrow function — also called fat arrow function— is a new feature introduced in ES6 that is a more
                 concise syntax for writing function expressions. While both regular JavaScript functions and arrow
@@ -101,17 +114,22 @@
             <p>Arrow functions do not have an arguments binding. However, they have access to the arguments object of
                 the closest non-arrow parent function. Named and rest parameters are heavily relied upon to capture the
                 arguments passed to arrow functions.</p>
-            <h4>Regular Function</h4>
+            </div>
+            <div class="bg-secondary p-5 my-4 rounded">
+                <h4>Regular Function</h4>
             <p>Regular functions created using function declarations or expressions are constructible and callable.
                 Since regular functions are constructible, they can be called using the new keyword.
 
                 However, the arrow functions are only callable and not constructible, i.e arrow functions can never be
                 used as constructor functions. Hence, they can never be invoked with the new keyword.</p>
+            </div>
         </section>
 
+        <!-- Difference between Map, Filter & Find -->
         <section>
-            <h3>No 3:</h3>
-            <h4>Difference between Map, find, filter</h4>
+            <h3 class="text-center">No 3:</h3>
+            <div class="bg-warning p-5 my-4 rounded">
+                <h4>Difference between Map, find, filter</h4>
             <p>The find() method is used to find all the descendant elements of the selected element. It finds the
                 element in the DOM tree by traversing through the root to leaf.
 
@@ -120,14 +138,18 @@
 
                 The only difference is the filter() method search through all the elements while find() method search
                 through all the child elements only.</p>
-            <h4>Find:</h4>
+            </div>
+            <div class="bg-warning p-5 mb-4 rounded">
+                <h4>Find:</h4>
             <ul>
                 <li>The find() method is used to find all the descendant elements of the selected element</li>
                 <li>The find() method finds the element in the DOM tree by traversing through the root to the leaf.</li>
                 <li>The find() method search through all the child elements only.</li>
                 <li>It does not change the original array.</li>
             </ul>
-            <h4>Filter:</h4>
+            </div>
+            <div class="bg-warning p-5 mb-4 rounded">
+                <h4>Filter:</h4>
             <ul>
                 <li>The filter() method is used to filter all the elements</li>
                 <li>The filter() method returns the element that matches and removes the element that does not match.
@@ -136,6 +158,7 @@
                 <li>The filter() method does not execute the function for empty elements.</li>
             </ul>
 
+            </div>
             <h4>Map:</h4>
             <ul>
                 <li>map() creates a new array from calling a function for every array element.</li>
