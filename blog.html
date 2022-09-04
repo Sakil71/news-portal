@@ -42,6 +42,7 @@
         <hr>
     </header>
     <main>
+        <!-- Difference between Var, Let, Const -->
         <section>
             <h3>No: 1</h3>
             <h4>Difference between Var, Let, Const</h4>
@@ -67,6 +68,7 @@
             <p>This means that the value of a variable declared with const remains the same within its scope. It cannot be updated or re-declared.</p>
         </section>
 
+        <!-- Difference between Arrow function and Regular function -->
         <section>
             <h4>The Difference Between Regular Functions and Arrow Functions</h4>
             <h4>Arrow Function</h4>
@@ -77,6 +79,37 @@
             <p>Regular functions created using function declarations or expressions are constructible and callable. Since regular functions are constructible, they can be called using the new keyword.
 
                 However, the arrow functions are only callable and not constructible, i.e arrow functions can never be used as constructor functions. Hence, they can never be invoked with the new keyword.</p>
+        </section>
+
+        <section>
+            <h4>Difference between Map, find, filter</h4>
+            <p>The find() method is used to find all the descendant elements of the selected element. It finds the element in the DOM tree by traversing through the root to leaf.
+
+                The filter() method is used to filters all the elements and returns the element that matches and the element that do not match are removed.
+                
+                The only difference is the filter() method search through all the elements while find() method search through all the child elements only.</p>
+            <h4>Find:</h4>
+            <ul>
+                <li>The find() method is used to find all the descendant elements of the selected element</li>
+                <li>The find() method finds the element in the DOM tree by traversing through the root to the leaf.</li>
+                <li>The find() method search through all the child elements only.</li>
+                <li>It does not change the original array.</li>
+            </ul>
+            <h4>Filter:</h4>
+            <ul>
+                <li>The filter() method is used to filter all the elements</li>
+                <li>The filter() method returns the element that matches and removes the element that does not match.</li>
+                <li>The filter() method search through all the elements</li>
+                <li>The filter() method does not execute the function for empty elements.</li>
+            </ul>
+
+            <h4>Map:</h4>
+            <ul>
+                <li>map() creates a new array from calling a function for every array element.</li>
+                <li>map() calls a function once for each element in an array.</li>
+                <li>map() does not execute the function for empty elements.</li>
+                <li>map() does not change the original array.</li>
+            </ul>
         </section>
     </main>
 
