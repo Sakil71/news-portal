@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>vorer alo news portal</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/67a2fbfa6c.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
+    ">
+    <style>
+        .style-hover:hover {
+            background-color: rgb(220, 220, 233);
+            padding: 4px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <header>
+        <!-- Navbar -->
+        <nav>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><span
+                            class="bg-primary px-3 rounded fw-semibold text-white">Vorer</span> <span
+                            class="text-primary fw-semibold">Alo</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        </ul>
+
+                        <div class="d-flex">
+                            <a href="" class="me-3 text-primary text-decoration-none fw-semibold">N<span
+                                    class="text-decoration-underline">ew</span>s</a>
+
+                            <a href="blog.html" class="me-3 text-secondary opacity-75 text-decoration-none fw-semibold">Blog</a>
+
+                            <img id="user-id" class="rounded-circle" style="width: 30px; height: 20px;" src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <!-- Categories -->
+        <section>
+            <div id="catagory-container" class="mb-5 d-flex justify-content-between text-wrap opacity-75">
+                <div>
+                    <a href="index.html" class="style-hover fs-6 text-decoration-none text-secondary fw-semibold">Home</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Count news -->
+        <section>
+            <h6 class="shadow-lg py-3 ps-4 rounded"><span id="count-news">0</span> items found in this category</h6>
+            <div class="my-5 d-flex">
+                <div class="flex-grow-1">
+                    <label class="fw-semibold" for="view">Short By View:</label>
+                    <select class="px-2" name="view">
+                        <option value="Default">Default</option>
+                        <option value="hot news">Most Views</option>
+                        <option value="hot news">Popular</option>
+                    </select>
+                </div>
+                <div>
+                    <button class="btn btn-outline-primary">Today's Pick</button>
+                    <button class="btn btn-outline-primary">Trending</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spinner -->
+        <section id="spiner" class="d-none">
+            <div class="d-flex justify-content-center align-content-center" style="height: 500px;">
+                <div class="spinner-border  text-info" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- News -->
+        <section class="container">
+            <div id="news" class="row">
+
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <section>
+            <div class="modal fade" id="loadedNewsDetails" tabindex="-1" aria-labelledby="loadedNewsDetailsLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-primary fw-bold" id="loadedNewsDetailsLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="modal-body" class="modal-body">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <script src="js/index.js"></script>
+</body>
+
+<hr>
+<footer class="mt-5">
+    <p class="text-dark text-center fw-semibold">&copy; 2022 Vorer Alo News</p>
+</footer>
+
+</html>
